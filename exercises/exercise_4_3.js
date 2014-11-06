@@ -1,9 +1,9 @@
 'use strict';
 
-var stack = require('../lib/stack');
+var Stack = require('../lib/stack');
 
 module.exports = function(pez) {
-  var tempStack = stack();
+  var tempStack = new Stack();
 
   while (!pez.empty()) {
     if (pez.top() !== 'yellow') {

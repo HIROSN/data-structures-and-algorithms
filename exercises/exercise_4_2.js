@@ -1,6 +1,6 @@
 'use strict';
 
-var stack = require('../lib/stack');
+var Stack = require('../lib/stack');
 
 module.exports = function(infix) {
   var result = {
@@ -17,8 +17,8 @@ module.exports = function(infix) {
     ')': {precedence: null}
   };
 
-  var operandStack = stack();
-  var operatorStack = stack();
+  var operandStack = new Stack();
+  var operatorStack = new Stack();
   var operand;
   var str;
   var s = 0;

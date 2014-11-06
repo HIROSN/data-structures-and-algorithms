@@ -1,10 +1,10 @@
 'use strict';
 
-var stack = require('../lib/stack');
+var Stack = require('../lib/stack');
 
 module.exports = function(expression) {
   var cols = [];
-  var parenthesisStack = stack();
+  var parenthesisStack = new Stack();
 
   for (var i = 0; i < expression.length; i++) {
     switch (expression[i]) {
