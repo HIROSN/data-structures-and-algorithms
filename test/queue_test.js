@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var Queue = require('../lib/queue');
 
-describe('queue', function() {
+describe('Queue', function() {
   it('returns undefined as back of empty queue', function() {
     expect(new Queue().back()).equals(undefined);
   });

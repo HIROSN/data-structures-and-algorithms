@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var Stack = require('../lib/stack');
 
-describe('stack', function() {
+describe('Stack', function() {
   it('returns undefined as top of empty stack', function() {
     expect(new Stack().top()).equals(undefined);
   });
