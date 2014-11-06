@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var ListNode = require('../lib/list');
+var ListNode = require('../lib/listnode');
 
 describe('ListNode', function() {
   it('returns undefined as the element of a new list head', function() {
