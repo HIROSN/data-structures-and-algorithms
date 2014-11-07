@@ -160,4 +160,29 @@ describe('ListNode', function() {
       insert('p').
       isPalindrome()).equals(false);
   });
+
+  it('is not a palindrome when the list is empty', function() {
+    expect(new ListNode().
+      isPalindrome()).equals(false);
+  });
+
+  it('finds one letter word as a palindrome', function() {
+    expect(new ListNode().
+      insert('A').
+      isPalindrome()).equals(true);
+  });
+
+  it ('can find 2 letter palindrome word', function() {
+    expect(new ListNode().
+      insert('C').
+      insert('C').
+      isPalindrome()).equals(true);
+  });
+
+  it ('can find 2 letter non-palindrome word', function() {
+    expect(new ListNode().
+      insert('C').
+      insert('D').
+      isPalindrome()).equals(false);
+  });
 });
