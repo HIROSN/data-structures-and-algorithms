@@ -160,7 +160,4 @@ describe('ListNode', function() {
       insert('p').
       isPalindrome()).equals(false);
   });
-
-  it('is not a palindrome when the list is empty', function() {
-  });
 });
