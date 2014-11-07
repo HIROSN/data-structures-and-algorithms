@@ -114,4 +114,53 @@ describe('ListNode', function() {
       remove(4).
       toString()).equals('1 -> 2 -> 3');
   });
+
+  it('can find 7 letter palindrome word', function() {
+    expect(new ListNode().
+      insert('R').
+      insert('A').
+      insert('C').
+      insert('E').
+      insert('C').
+      insert('A').
+      insert('R').
+      isPalindrome()).equals(true);
+  });
+
+  it('can find 6 letter palindrome word', function() {
+    expect(new ListNode().
+      insert('p').
+      insert('u').
+      insert('l').
+      insert('l').
+      insert('u').
+      insert('p').
+      isPalindrome()).equals(true);
+  });
+
+  it('can find 7 letter non-palindrome word', function() {
+    expect(new ListNode().
+      insert('R').
+      insert('A').
+      insert('C').
+      insert('E').
+      insert('B').
+      insert('A').
+      insert('R').
+      isPalindrome()).equals(false);
+  });
+
+  it('can find 6 letter non-palindrome word', function() {
+    expect(new ListNode().
+      insert('p').
+      insert('u').
+      insert('s').
+      insert('h').
+      insert('u').
+      insert('p').
+      isPalindrome()).equals(false);
+  });
+
+  it('is not a palindrome when the list is empty', function() {
+  });
 });
