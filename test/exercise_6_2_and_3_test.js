@@ -92,7 +92,7 @@ describe('Exercise 6.2 and 6.3', function() {
       toString()).equals('node1 <--> node3');
   });
 
-  it('it can remove an element from the begging', function() {
+  it('it can remove an element from the beginning', function() {
     expect(new DoublyLinkedList().
       insert('node3').
       insert('node2').
